@@ -1,0 +1,18 @@
+$desktop: 550px;
+$grid: 1006px;
+
+
+@mixin desktop {
+	@media (min-width: $desktop){
+		@content
+	}
+}
+@mixin grid {
+	@media (min-width: $grid){
+		@content
+	}
+}
+
+
+
+
