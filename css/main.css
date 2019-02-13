@@ -16,22 +16,21 @@ html {
   text-align: center;
   font-size: 2rem;
   color: dimgrey;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 .inputNav input:focus {
   outline: none;
+}
+.inputNav input::placeholder {
+  letter-spacing: 0.5rem;
+  font-size: 2rem;
+  font-weight: 900;
+  color: grey;
 }
 @media (min-width: 550px) {
   .inputNav input {
     width: 40%;
   }
-}
-.inputNav input::placeholder {
-  text-align: center;
-  letter-spacing: 0.5rem;
-  font-size: 2rem;
-  font-weight: 900;
-  color: grey;
 }
 
 .flex {
@@ -61,7 +60,6 @@ img {
 img:hover {
   box-shadow: 0 0 5px grey;
   transition: box-shadow 500ms;
-  cursor: pointer;
 }
 
 .item {

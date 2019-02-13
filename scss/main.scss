@@ -14,7 +14,6 @@ html{
 	display: flex;
 	justify-content: center;
 	margin: 1.6rem 0;
-
 	input{
 		background-color: transparent;
 		border: none;
@@ -24,21 +23,20 @@ html{
 		text-align: center;
 		font-size: 2rem;
 		color: dimgrey;
-		letter-spacing: .2rem;
+		letter-spacing: .1rem;
 
 		&:focus{
 			outline: none;
 		}
+		&::placeholder {
+			letter-spacing: .5rem;
+			font-size: 2rem;
+			font-weight: 900;
+			color: grey;
+		}
 		@include desktop {
-		width: 40%;
+			width: 40%;
 	}	
-	}
-	input::placeholder {
-		text-align: center;
-		letter-spacing: .5rem;
-		font-size: 2rem;
-		font-weight: 900;
-		color: grey;
 	}
 }
 
@@ -66,7 +64,6 @@ img{
 	&:hover{
 		box-shadow: 0 0 5px grey;
 		transition: box-shadow 500ms ;
-		cursor: pointer;
 	}
 
 }
